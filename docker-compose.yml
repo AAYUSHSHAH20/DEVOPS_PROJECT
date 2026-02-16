@@ -2,7 +2,7 @@ services:
   backend:
     build: ./backend
     expose:
-      - "5000"  # Only expose internally, not to host
+      - "5000"
     environment:
       - PORT=5000
       - MONGO_URI=mongodb+srv://ayushs:Aayush28@cluster0.cl24ook.mongodb.net/Personal_DB
@@ -11,9 +11,9 @@ services:
   frontend:
     build: ./frontend
     expose:
-      - "4173"  # Only expose internally
+      - "4173"
     environment:
-      - VITE_BACKEND_URL=/api
+      - VITE_API_URL=
     depends_on:
       - backend
 
