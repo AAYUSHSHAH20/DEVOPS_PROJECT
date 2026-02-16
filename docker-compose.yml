@@ -17,18 +17,17 @@ services:
       - app-network
 
   nginx:
-  image: nginx:alpine
-  container_name: nginx
-  ports:
-    - "80:80"
-  volumes:
-    - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
-  depends_on:
-    - frontend
-    - backend
-  networks:
-    - app-network
-
+    image: nginx:alpine
+    container_name: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - frontend
+      - backend
+    networks:
+      - app-network
 
 networks:
   app-network:
