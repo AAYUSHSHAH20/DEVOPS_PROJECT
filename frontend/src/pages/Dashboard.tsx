@@ -31,7 +31,7 @@ export default function Dashboard() {
   const addTask = async (): Promise<void> => {
     try {
       await axios.post(
-        import.meta.env.VITE_API_URL + "/api/task",
+        "/api/task",
         { title },
         {
           headers: { Authorization: `Bearer ${token}` }

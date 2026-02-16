@@ -14,7 +14,7 @@ export default function Login() {
     const login = async (): Promise<void> => {
         try {
             const res = await axios.post<LoginResponse>(
-                import.meta.env.VITE_API_URL + "/api/auth/login",
+                "/api/auth/login",  // Just use this directly
                 { email, password }
             );
 

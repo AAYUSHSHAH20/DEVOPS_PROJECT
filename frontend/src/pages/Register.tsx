@@ -15,7 +15,7 @@ export default function Register() {
   const register = async (): Promise<void> => {
     try {
       await axios.post<RegisterResponse>(
-        import.meta.env.VITE_API_URL + "/api/auth/register",
+        "/api/auth/register",
         { name, email, password }
       );
 
