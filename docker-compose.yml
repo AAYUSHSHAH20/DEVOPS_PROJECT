@@ -1,17 +1,15 @@
 services:
   backend:
-    build: ./backend
-    expose:
-      - "5000"
+    image: aayush44/devops-backend
+    container_name: backend
     environment:
       - PORT=5000
       - MONGO_URI=mongodb+srv://ayushs:Aayush28@cluster0.cl24ook.mongodb.net/Personal_DB
       - JWT_SECRET=supersecretkey
 
   frontend:
-    build: ./frontend
-    expose:
-      - "4173"
+    image: aayush44/devops-backend
+    container_name: frontend
     environment:
       - VITE_API_URL=
     depends_on:
