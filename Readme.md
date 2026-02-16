@@ -313,11 +313,6 @@ NODE_ENV=production
 Backend Developer → DevOps Engineer
 
 - 💼 1.6+ years experience in Node.js
-- 🚀 Specializing in cloud infrastructure & automation
-- 📧 [Contact/Email]
-- 🔗 [LinkedIn Profile]
-- 💻 [GitHub Profile]
-
 ---
 
 ## 🌟 Key Takeaways
